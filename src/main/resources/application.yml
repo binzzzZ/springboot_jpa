@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://120.79.0.99:3306/socks?characterEncoding=utf8&serverTimezone=Hongkong
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    # formatSQL得这样写
+    properties:
+      hibernate:
+        format_sql: true

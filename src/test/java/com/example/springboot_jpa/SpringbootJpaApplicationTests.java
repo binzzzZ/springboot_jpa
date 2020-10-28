@@ -41,4 +41,9 @@ class SpringbootJpaApplicationTests {
         userDao.save(new User("9527", "test-data-jpa", "second-pass"));
     }
 
+    @Test
+    void find2() {
+        List<User> users = userDao.findAll();
+        System.out.println(users);
+    }
 }
